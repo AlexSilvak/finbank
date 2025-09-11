@@ -21,10 +21,10 @@
 
 - **Backend:** NestJS + TypeScript  
 - **Frontend:** Next.js + React  
-- **Banco de Dados:** PostgreSQL  
+- **Banco de Dados:** MongoDB | PostgreSQL  
 - **Autenticação:** JWT + Criptografia AES  
 - **Containerização:** Docker  
-- **Relatórios:** Chart.js + PDFKit  
+- **Relatórios:** Recharts + PDFKit  
 
 ---
 
