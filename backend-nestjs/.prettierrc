@@ -1,0 +1,11 @@
+{
+  "singleQuote": true,  
+  "trailingComma": "all",
+   "endOfLine": "auto",
+     "usePrettierrc": false,
+       "bracketSameLine": true,
+  "printWidth": 120,
+  "proseWrap": "never",
+  "prettier/prettier": "off"
+  
+}
