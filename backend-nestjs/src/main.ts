@@ -10,7 +10,7 @@ async function bootstrap() {
     .setTitle('FinBank')
     .setDescription('API Finbank ')
     .setVersion('1.0')
-    .addTag('financeiro')
+    //.addTag('financeiro')
     .build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, documentFactory);

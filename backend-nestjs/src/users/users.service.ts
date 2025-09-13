@@ -1,12 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User ,UserDocument} from './entities/user.entity';
+import { User, UserDocument } from './entities/user.entity';
 import { CreateUserDto } from '../users/dto/create-user.dto';
 import { UpdateUserDto } from '../users/dto/update-user.dto';
-import { NotFoundException } from '@nestjs/common';
-
-
 
 @Injectable()
 export class UsersService {
@@ -14,7 +11,7 @@ export class UsersService {
 
   async create(createUserDto: CreateUserDto): Promise<User> {
     const createdUser = new this.userModel(createUserDto);
-    return (await createdUser.save());
+    return await createdUser.save();
   }
 
   async findAll(): Promise<User[]> {
@@ -29,6 +26,30 @@ export class UsersService {
     return user;
   }
 
+  async update(id: string, updateUserDto: UpdateUserDto): Promise<User> {
+    const updatedUser = await this.userModel
+      .findByIdAndUpdate(id, updateUserDto, { new: true })
+      .exec();
+    if (!updatedUser) {
+      throw new NotFoundException(`User with ID ${id} not found`);
+    }
+    return updatedUser;
+  }
 
+  async updatePartial(id: string, updateUserDto: Partial<UpdateUserDto>): Promise<User> {
+    const updatedUser = await this.userModel
+      .findByIdAndUpdate(id, updateUserDto, { new: true })
+      .exec();
+    if (!updatedUser) {
+      throw new NotFoundException(`User with ID ${id} not found`);
+    }
+    return updatedUser;
+  }
 
+  async remove(id: string): Promise<void> {
+    const result = await this.userModel.deleteOne({ _id: id }).exec();
+    if (result.deletedCount === 0) {
+      throw new NotFoundException(`User with ID ${id} not found`);
+    }
+  }
 }
