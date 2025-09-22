@@ -68,16 +68,15 @@
 ## 📦 Estrutura de Pastas (Backend)
 
 ```plaintext
-backend/
-├── src/
-│   ├── auth/
-│   ├── users/
-│   ├── transactions/
-│   ├── categories/
-│   ├── goals/
-│   ├── reports/
-│   └── config/
-├── test/
-├── .env
-├── Dockerfile
-└── package.json
+erp/
+├── backend/                # API NestJS
+│   ├── src/                # Código fonte do NestJS
+│   ├── test/               # Testes automatizados
+│   ├── .env                # Variáveis de ambiente
+│   ├── Dockerfile          # Imagem da API
+│   └── package.json        # Dependências e scripts
+├── frontend-nextjs/        # Aplicação Next.js
+│   ├── app/                # Páginas e componentes
+│   └── package.json
+├── docker-compose.yml      # Orquestração de containers
+└── README.md
