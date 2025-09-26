@@ -38,13 +38,17 @@
 
 ### 📤 Controle de Despesas
 
+  
+<img width="1910" height="974" alt="image" src="https://github.com/user-attachments/assets/e78df45b-902d-46bf-85df-4da7e638c539" />
+
+<img width="1905" height="971" alt="image" src="https://github.com/user-attachments/assets/7e19f854-7cf4-4995-8c3a-7028831c8ac1" />
+
 - Cadastro de despesas fixas e variáveis  
 - Classificação por categorias (moradia, alimentação, transporte, lazer, etc.)  
 - Alertas de gastos excessivos por categoria  
 - Registro de despesas parceladas
-  
-<img width="1914" height="973" alt="image" src="https://github.com/user-attachments/assets/4e6b7931-c06e-4c07-a69b-33f65c839267" />
-<img width="1917" height="968" alt="image" src="https://github.com/user-attachments/assets/d981f07f-94d3-49eb-b4ad-367b6c33cbb7" />
+
+
 
  
 
