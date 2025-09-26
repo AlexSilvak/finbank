@@ -51,8 +51,10 @@
 - Registro de despesas parceladas
 
 
+### 📊 Tema
+ - Dark / Light
+ <img width="1912" height="1070" alt="image" src="https://github.com/user-attachments/assets/1bc3fec3-0f09-437c-9406-fb38f57bd6fb" />
 
- 
 
 ### 📊 Relatórios e Dashboards
 
