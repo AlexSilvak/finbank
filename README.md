@@ -37,6 +37,7 @@
 - Histórico de entradas por período  
 
 ### 📤 Controle de Despesas
+<img width="1914" height="973" alt="image" src="https://github.com/user-attachments/assets/4e6b7931-c06e-4c07-a69b-33f65c839267" />
 
 - Cadastro de despesas fixas e variáveis  
 - Classificação por categorias (moradia, alimentação, transporte, lazer, etc.)  
@@ -53,8 +54,7 @@
 ### 🎯 Planejamento Financeiro
 
 - Definição de metas mensais e anuais  
-- Simulação de economia com cortes de gastos  
-- Projeção de saldo futuro com base em hábitos atuais  
+ 
 
 ### 🔐 Segurança
 
@@ -65,10 +65,10 @@
 
 ---
 
-## 📦 Estrutura de Pastas (Backend)
+## 📦 Estrutura do projeto
 
 ```plaintext
-erp/
+finbank/
 ├── backend/                # API NestJS
 │   ├── src/                # Código fonte do NestJS
 │   ├── test/               # Testes automatizados
