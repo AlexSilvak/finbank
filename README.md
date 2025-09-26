@@ -43,6 +43,7 @@
 
 <img width="1905" height="971" alt="image" src="https://github.com/user-attachments/assets/7e19f854-7cf4-4995-8c3a-7028831c8ac1" />
 
+
 - Cadastro de despesas fixas e variáveis  
 - Classificação por categorias (moradia, alimentação, transporte, lazer, etc.)  
 - Alertas de gastos excessivos por categoria  
