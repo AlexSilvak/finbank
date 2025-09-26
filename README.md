@@ -39,7 +39,8 @@
 ### 📤 Controle de Despesas
 
   
-<img width="1910" height="974" alt="image" src="https://github.com/user-attachments/assets/e78df45b-902d-46bf-85df-4da7e638c539" />
+<img width="1913" height="1026" alt="image" src="https://github.com/user-attachments/assets/3dcaf328-a1b2-4624-b9d6-fcb320b05899" />
+
 
 <img width="1905" height="971" alt="image" src="https://github.com/user-attachments/assets/7e19f854-7cf4-4995-8c3a-7028831c8ac1" />
 
