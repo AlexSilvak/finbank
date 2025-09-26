@@ -37,12 +37,16 @@
 - Histórico de entradas por período  
 
 ### 📤 Controle de Despesas
-<img width="1914" height="973" alt="image" src="https://github.com/user-attachments/assets/4e6b7931-c06e-4c07-a69b-33f65c839267" />
 
 - Cadastro de despesas fixas e variáveis  
 - Classificação por categorias (moradia, alimentação, transporte, lazer, etc.)  
 - Alertas de gastos excessivos por categoria  
-- Registro de despesas parceladas  
+- Registro de despesas parceladas
+  
+<img width="1914" height="973" alt="image" src="https://github.com/user-attachments/assets/4e6b7931-c06e-4c07-a69b-33f65c839267" />
+<img width="1917" height="968" alt="image" src="https://github.com/user-attachments/assets/d981f07f-94d3-49eb-b4ad-367b6c33cbb7" />
+
+ 
 
 ### 📊 Relatórios e Dashboards
 
