@@ -19,16 +19,16 @@ export class BanksController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.banksService.findOne(+id);
+    return this.banksService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateBankDto: UpdateBankDto) {
-    return this.banksService.update(+id, updateBankDto);
+    return this.banksService.update(id, updateBankDto); 
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.banksService.remove(+id);
+    return this.banksService.remove(id); 
   }
 }

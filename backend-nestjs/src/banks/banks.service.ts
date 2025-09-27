@@ -1,26 +1,50 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreateBankDto } from './dto/create-bank.dto';
 import { UpdateBankDto } from './dto/update-bank.dto';
+import { Bank, BankDocument } from './entities/bank.entity';
 
 @Injectable()
 export class BanksService {
-  create(createBankDto: CreateBankDto) {
-    return 'This action adds a new bank';
+  constructor(
+    @InjectModel(Bank.name) private readonly bankModel: Model<BankDocument>,
+  ) {}
+  // Regra: Deve existe validações para cada método. Exemplo: Ao inserir registros duplicados mostrar um mensagem de retorno na API.
+  async create(createBankDto: CreateBankDto): Promise<Bank> {
+    const createdBank = new this.bankModel(createBankDto);
+    return createdBank.save();
   }
 
-  findAll() {
-    return `This action returns all banks`;
+  async findAll(): Promise<Bank[]> {
+    return this.bankModel.find().exec();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} bank`;
+  async findOne(id: string): Promise<Bank> {
+    const bank = await this.bankModel.findById(id).exec();
+    if (!bank) {
+      throw new NotFoundException(`Bank with id ${id} not found`);
+    }
+    return bank;
   }
 
-  update(id: number, updateBankDto: UpdateBankDto) {
-    return `This action updates a #${id} bank`;
+  async update(id: string, updateBankDto: UpdateBankDto): Promise<Bank> {
+    const updatedBank = await this.bankModel
+      .findByIdAndUpdate(id, updateBankDto, { new: true })
+      .exec();
+
+    if (!updatedBank) {
+      throw new NotFoundException(`Bank with id ${id} not found`);
+    }
+
+    return updatedBank;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} bank`;
+  async remove(id: string): Promise<Bank> {
+    const deletedBank = await this.bankModel.findByIdAndDelete(id).exec();
+    if (!deletedBank) {
+      throw new NotFoundException(`Bank with id ${id} not found`);
+    }
+    return deletedBank;
   }
 }
