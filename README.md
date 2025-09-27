@@ -77,6 +77,23 @@
 
 ---
 
+
+## 📦 Documentação com Swagger UI
+<img width="1894" height="933" alt="image" src="https://github.com/user-attachments/assets/9fde1797-fd88-46fb-91ce-3e416b687341" />
+
+
+### Utilização de Ferramentas de Teste como Jest 
+
+Jest · Delightful JavaScript Testing
+https://jestjs.io/
+
+
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/a921194e-dc50-4219-a74e-13398ccb5ec5" />
+
+
+
+
+
 ## 📦 Estrutura do projeto
 
 ```plaintext
