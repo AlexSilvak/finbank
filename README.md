@@ -38,10 +38,23 @@
 
 ### 📤 Controle de Despesas
 
+  
+<img width="1913" height="1026" alt="image" src="https://github.com/user-attachments/assets/3dcaf328-a1b2-4624-b9d6-fcb320b05899" />
+
+
+<img width="1905" height="971" alt="image" src="https://github.com/user-attachments/assets/7e19f854-7cf4-4995-8c3a-7028831c8ac1" />
+
+
 - Cadastro de despesas fixas e variáveis  
 - Classificação por categorias (moradia, alimentação, transporte, lazer, etc.)  
 - Alertas de gastos excessivos por categoria  
-- Registro de despesas parceladas  
+- Registro de despesas parceladas
+
+
+### 📊 Tema
+ - Dark / Light
+ <img width="1912" height="1070" alt="image" src="https://github.com/user-attachments/assets/1bc3fec3-0f09-437c-9406-fb38f57bd6fb" />
+
 
 ### 📊 Relatórios e Dashboards
 
@@ -53,8 +66,7 @@
 ### 🎯 Planejamento Financeiro
 
 - Definição de metas mensais e anuais  
-- Simulação de economia com cortes de gastos  
-- Projeção de saldo futuro com base em hábitos atuais  
+ 
 
 ### 🔐 Segurança
 
@@ -65,10 +77,34 @@
 
 ---
 
-## 📦 Estrutura de Pastas (Backend)
+
+## 📦 Documentação com Swagger UI
+<img width="1894" height="933" alt="image" src="https://github.com/user-attachments/assets/9fde1797-fd88-46fb-91ce-3e416b687341" />
+
+
+###  Ferramentas de Teste 
+
+Jest · Delightful JavaScript Testing
+https://jestjs.io/
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/a921194e-dc50-4219-a74e-13398ccb5ec5" />
+---
+Vitest
+Next Generation Testing Framework
+https://vitest.dev/guide/
+
+<img width="1901" height="851" alt="image" src="https://github.com/user-attachments/assets/9b8dd5d8-22e7-4288-9fff-48dd5cde8299" />
+
+
+
+
+
+
+
+
+## 📦 Estrutura do projeto
 
 ```plaintext
-erp/
+finbank/
 ├── backend/                # API NestJS
 │   ├── src/                # Código fonte do NestJS
 │   ├── test/               # Testes automatizados
