@@ -82,10 +82,16 @@
 <img width="1894" height="933" alt="image" src="https://github.com/user-attachments/assets/9fde1797-fd88-46fb-91ce-3e416b687341" />
 
 
-### Utilização de Ferramentas de Teste como Jest 
+###  Ferramentas de Teste 
 
 Jest · Delightful JavaScript Testing
 https://jestjs.io/
+---
+Vitest
+Next Generation Testing Framework
+https://vitest.dev/guide/
+
+<img width="1901" height="851" alt="image" src="https://github.com/user-attachments/assets/9b8dd5d8-22e7-4288-9fff-48dd5cde8299" />
 
 
 <img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/a921194e-dc50-4219-a74e-13398ccb5ec5" />
